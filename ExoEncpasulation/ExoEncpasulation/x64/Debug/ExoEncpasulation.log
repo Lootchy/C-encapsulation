@@ -1,0 +1,5 @@
+﻿  ExoEncpasulation.cpp
+C:\Users\zcolucci\source\repos\ExoEncpasulation\ExoEncpasulation\Int.h(72,22): warning C4244: 'initialisation' : conversion de 'double' en 'int', perte possible de données
+  (compiler le fichier source 'ExoEncpasulation.cpp')
+  
+  ExoEncpasulation.vcxproj -> C:\Users\zcolucci\source\repos\ExoEncpasulation\x64\Debug\ExoEncpasulation.exe
