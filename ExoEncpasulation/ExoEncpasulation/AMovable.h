@@ -8,34 +8,22 @@ private:
     float y;
     float speed;
 
-
 public:
-    // Constructeur par défaut
-    AMovable() : x(0.0f), y(0.0f), speed(0.0f) {}
+    // Constructeur par dÃ©faut
+    AMovable();
 
-    // Constructeur avec paramètres
-    AMovable(float _xValue, float _yValue, float speedValue) : x(_xValue), y(_yValue), speed(speedValue) {}
+    // Constructeur avec paramÃ¨tres
+    AMovable(float _xValue, float _yValue, float speedValue);
 
-    // Getter pour X et Y en même temps
-    virtual std::pair<float, float> getPosition() const {
-        return std::make_pair(x, y);
-    }
+    // Getter pour X et Y en mÃªme temps
+    virtual std::pair<float, float> getPosition() const;
 
-    // Setter pour X et Y en même temps
-    virtual void SetPosition(float _xValue, float _yValue) {
-        x = _xValue;
-        y = _yValue;
-    }
+    // Setter pour X et Y en mÃªme temps
+    virtual void SetPosition(float _xValue, float _yValue);
 
-    //Setter pour la speed
-    virtual void SetSpeed(float speedValue) {
-        speed = speedValue;
-    }
+    // Setter pour la vitesse
+    virtual void SetSpeed(float speedValue);
 
-    //Setter pour le mouvement
-    virtual void SetMove(float _xValue, float _yValue, float addX, float addY) = 0 {
-        x = _xValue + addX;
-        y = _yValue + addY;
-    }
+    // MÃ©thode virtuelle pure pour le mouvement
+    virtual void SetMove(float _xValue, float _yValue, float addX, float addY) = 0;
 };
-
